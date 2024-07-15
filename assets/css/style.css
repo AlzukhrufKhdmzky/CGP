@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(224, 224, 224);
+}
+
+h2 {
+  font-family: 'Stylish', sans-serif;
+  text-align: center;
+}
+
+/* navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(90, 51, 14);
+  z-index: 100;
+}
+
+nav .logo a {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color: rgb(221, 219, 219);
+}
+
+nav .logo a span {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(235, 235, 235);
+}
+
+nav .navs {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(216, 215, 215);
+  font-size: 0.9rem;
+}
+
+.container1 {
+  margin: 75px 30px 30px;
+  padding: 20px 10px;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 3px 4px 10px 5px rgba(126, 126, 126, 0.4);
+}
+
+/* section home */
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home .hero .carousel-inner {
+  height: 500px;
+  width: 60vw;
+}
+
+.home .hero .carousel-inner .slide-img img {
+  height: 100vh;
+  width: 100%;
+}
+
+.home .card-iklan {
+  margin-left: 1rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 18px;
+  padding: 10px 20px;
+}
+
+.home .card-iklan .iklan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* section  */
+.about,
+.contact {
+  margin-top: 30px;
+  padding: 80px 0 20px 0;
+}
+
+/* section Film */
+.film {
+  padding: 80px 0 20px 0;
+}
+
+.film .row {
+  display: flex;
+  justify-content: center;
+}
+
+.film .row .col .card a img {
+  height: 350px;
+  width: 100%;
+}
+
+.film .row .col .card:hover {
+  transform: scale(1.1);
+  transition: .8s;
+}
+
+/* Detail */
+.container {
+  margin-top: 100px;
+}
+
+.container .main-content .roww {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 15px 0;
+}
+
+.container .main-content .roww .poster {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .main-content .roww .poster a img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  padding: 0 10px;
+}
+
+.container .main-content .roww .buy {
+  width: 70%;
+}
+
+.container .main-content .roww .buy button,
+.container .main-content .button button {
+  background-color: rgb(90, 51, 14);
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  color: rgb(221, 219, 219);
+  border-radius: 5px;
+}
+
+.container .main-content .roww .buy button:hover {
+  background: linear-gradient(45deg, rgba(219, 137, 61), rgb(146, 78, 32));
+}
+
+/* schedule */
+.main-content .row .clock a {
+  text-decoration: none;
+  color: rgb(73, 73, 73);
+}
+
+.main-content .row .clock button {
+  width: 70px;
+  height: 35px;
+  margin-right: 10px;
+  border: 0.5px solid rgb(66, 66, 66);
+  border-radius: 8px;
+}
+
+.modal .modal-dialog .modal-content .modal-footer button {
+  width: 80px;
+  height: 35px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(226, 226, 226);
+  color: rgb(73, 73, 73);
+}
+
+.main-content .rowww select {
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.main-content .rowww .button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.main-content .rowww button {
+  width: 500px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(90, 51, 14);
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  color: rgb(221, 219, 219);
+}
+
+/* seats */
+.container .main-content .row3 {
+  border-bottom: 2 solid black;
+}
+
+.row3 #seat_container {
+  width: 400px;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.row3 .seat {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  background-color: #ccc;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.row3 .seat.selected {
+  background-color: #ff0000;
+}
+
+.row3 .seats .row input[type=radio] {
+  margin: 8px 0;
+}
+
+.row3 button {
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* detail transaksi */
+.container .main-content .detail {
+  background: linear-gradient(45deg, rgb(34, 34, 222), rgb(21, 21, 106), rgb(29, 29, 52));
+  font-family: 'Roboto Slab', serif;
+  color: rgb(221, 219, 219);
+}
+
+.container .main-content .detail .content p {
+  font-size: 0.8rem;
+}
+
+.container .main-content .barcode {
+  background-color: rgb(218, 218, 218);
+}
+
+/* contact us */
+/* .contact .row {
+  height: 300px;
+} */
+
+
+/* footer */
+footer .credit {
+  background-color: rgb(90, 51, 14);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: 'Stylish', sans-serif;
+}
+
+footer .credit p {
+  color: rgb(221, 219, 219);
+}
+
+footer .credit a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+}
+
+
+
+
+@media (max-width:768px) {
+  html {
+    font-size: 70%;
+  }
+
+  nav .navs {
+    display: none;
+  }
+
+  .container1 {
+    margin: 90px 10px 30px;
+  }
+
+  .film .row .col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .film .row .col .card {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .film .row .col .card a img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .film .row .col .card:hover {
+    transform: scale(1);
+  }
+
+  /* detail */
+
+
+}
